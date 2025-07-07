@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Suhails portfolio",
   "main": "index.html",
-  "scripts": {
-    "start": "rsbuild start",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "rsbuild start",
+  "build": "rsbuild build",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ajith-Arasu/suhail-portfolio.git"
