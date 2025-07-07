@@ -1,0 +1,85 @@
+.container {
+  border-radius: 30px;
+  height: 350px;
+  width: 300px;
+  border: 2px solid #a18a93;
+  border-bottom: none;
+  backdrop-filter: blur(10px);
+  background-color: #68686833;
+  position: relative;
+}
+
+.headc {
+  height: 20%;
+  border-bottom: 2px solid #a18a93;
+  align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: var(--text-white);
+}
+
+.bodyc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 80%;
+}
+
+.firstImg {
+  border-radius: 30px 30px 0 0;
+  width: 75%;
+  background-color: #757575;
+  height: 8%;
+}
+
+.scndImg {
+  border-radius: 30px 30px 0 0;
+  width: 85%;
+  background-color: #9e9d9d;
+  height: 8%;
+}
+
+.thrdImg {
+  border-radius: 30px;
+  width: 101.5%;
+  background-color: brown;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cardImg {
+  height: 135%;
+  object-fit: cover;
+}
+
+.myBtn {
+  position: absolute;
+  right: -4px;
+  background: #3b0017;
+  border-radius: 30px 0px;
+}
+
+.myBtn button {
+  height: 80px;
+  width: 80px;
+  padding: 0;
+  margin: 10px 0 0 10px;
+  border-radius: 50%;
+  border: none;
+  background: #1d2939;
+  color: white;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myBtn button img {
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+}

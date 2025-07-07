@@ -1,0 +1,247 @@
+.myDetailsContainer{
+display: flex;
+    justify-content: center;
+    grid-gap: 5rem;
+    align-items: center;
+    width: 80%;
+margin: 5rem auto;
+    border-radius: 35px;
+    background: #FFE1BD0F;
+padding: 4rem;
+
+}
+.myDetailsImgContainer img {
+     object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+.mydetailText {
+    color: var(--text-white);
+}
+.myDetailsHeadContainer p {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 30px;
+        margin: 0;
+
+}
+.myserviceContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.wrapper {
+  max-width: 1152px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--text-white);
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.timelineContainer {
+  position: relative;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.timelineItems {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.timelineItem {
+  position: relative;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-white);
+  border-radius: 50%;
+  border: 4px solid #7f1d1d;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.leftContent {
+  text-align: center;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rightContent {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.companyName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-white);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.duration {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  margin: 0;
+}
+
+.position {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-white);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.workexp{
+    color: var(--secondary-color);
+}
+
+.serviceText{
+    color: var(--text-white);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.serviceTitle{
+    margin: 0;
+      font-size: 2.5rem;
+  color: var(--text-white);
+  text-align: center;
+margin : 4rem 0 2rem 0;
+
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+.lableContainer{
+        justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto auto 4rem;
+    display: flex;
+}
+.lableContainer button{
+    background: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+.portfoliocardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 4rem;
+        flex-wrap: wrap;
+    margin: 0 4rem;
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .contentGrid {
+    gap: 4rem;
+  }
+  
+  .leftContent {
+    padding-right: 3rem;
+  }
+  
+  .rightContent {
+    padding-left: 3rem;
+  }
+  
+  .companyName,
+  .position {
+    font-size: 1.25rem;
+  }
+  
+  .duration,
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .leftContent {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 2rem;
+    order: 2;
+  }
+  
+  .rightContent {
+    padding-left: 2rem;
+    order: 1;
+  }
+  
+  .timelineLine {
+    left: 1rem;
+  }
+  
+  .timelineDot {
+    left: 1rem;
+  }
+}

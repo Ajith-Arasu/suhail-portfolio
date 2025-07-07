@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // defines the targer environment
+    "lib": ["dom", "dom.iterable", "es2023", "WebWorker"], // specifies which default set of type definitions to use ("DOM", "ES6", etc)
+    "baseUrl": "src", // Lets you set a base directory to resolve non-absolute module names.
+    "removeComments": true, // Strips all comments from TypeScript files when converting into JavaScript- you rarely read compiled code so this saves space
+    "esModuleInterop": true, // fixes some issues TS originally had with the ES6 spec where TypeScript treats CommonJS/AMD/UMD modules similar to ES6 module
+    "alwaysStrict": true, // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+    "allowUnreachableCode": false, // pick up dead code paths
+    "noImplicitAny": true, // In some cases where no type annotations are present, TypeScript will fall back to a type of any for a variable when it cannot infer the type.
+    "strictNullChecks": true, // When strictNullChecks is true, null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected.
+    "noImplicitReturns": true, //  will check all code paths in a function to ensure they return a value.
+    "noUncheckedIndexedAccess": true, // accessing index must always check for undefined
+    "noUnusedLocals": true, // Report errors on unused local variables.
+    "noUnusedParameters": true, // Report errors on unused parameters in functions
+    "noImplicitThis": true, // Raise error on ‘this’ expressions with an implied ‘any’ type
+    "strictBindCallApply": true, // Validate call apply bind methods for have type defined when used
+    "strictFunctionTypes": true, //  functions parameters to be checked more correctly.
+    "useUnknownInCatchVariables": true, // Allow changing the type of the variable in a catch clause from any to unknown. This pattern ensures that error handling code becomes more comprehensive
+    "noFallthroughCasesInSwitch": true, // Validates break and return statements are implemented in switch case
+    "forceConsistentCasingInFileNames": true, // will throw error if the file name is not matching the exact name in the disc(case sensitive)
+    "exactOptionalPropertyTypes": true, // with this enabled if the property is not present in obj we will get undefined, but if the property is set to undefined we will get the property exits in the obj
+    "allowJs": true, // Allowing the import of js files other then ts or tsx file
+    "skipLibCheck": true, // skip type checking for declaration files d.ts files
+    "strict": true, // enables all the strict mode family options
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "svg.d.ts"],
+  "exclude": ["cypress/*", "node_modules/**/*"]
+}

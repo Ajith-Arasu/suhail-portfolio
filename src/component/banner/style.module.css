@@ -1,0 +1,87 @@
+.bannerContainer {
+  background: url("../../assets/img/heroSection.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3.75rem;
+  color: white;
+  overflow: hidden;
+}
+
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5625rem;
+}
+
+.navLinks li {
+  cursor: pointer;
+  font-size: 1.3125rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Hero Content */
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.circle {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: center;
+  padding: 2.5rem 3.75rem;
+  border-radius: 50%;
+  max-width: 25rem;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.circle h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.625rem;
+}
+
+.circle p {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.ctaButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5625rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  border-radius: 0.875rem;
+  cursor: pointer;
+}
+
+.heroContentData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 16px;
+}
+
+.helloText {
+  margin: 0;
+  font-weight: 400;
+}
+
+.helloText span {
+  font-weight: 800;
+}
+
+
